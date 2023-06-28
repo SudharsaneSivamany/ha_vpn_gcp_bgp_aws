@@ -1,0 +1,14 @@
+variable "ha_vpn_gateway_name" { default = "cymbal-cloud-ha-vpn-gw" }
+variable "project_id" { default = <project_id> }
+variable "region" { default = "us-east4" }
+variable "network" { default = "cymbal-cloud-vpc" }
+variable "router_name" { default = "cymbal-cloud-router" }
+variable "gcp_router_asn" { default = "65534" }
+variable "aws_vpc" { default = "vpc-069b323d4c5496660" }
+variable "aws_side_asn" { default = "65001" }
+variable "vpn1-tunnel1-bgp-cidr-range" { default = "169.254.10.0/30" }
+variable "vpn1-tunnel2-bgp-cidr-range" { default = "169.254.20.0/30" }
+variable "vpn2-tunnel1-bgp-cidr-range" { default = "169.254.30.0/30" }
+variable "vpn2-tunnel2-bgp-cidr-range" { default = "169.254.40.0/30" }
+variable "preshared_key" { default = "gcprocks" }
+variable "external_peer_gateway_name" { default = "gcp-to-aws-vpn-gw" }
